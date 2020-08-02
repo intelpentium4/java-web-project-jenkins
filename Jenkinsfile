@@ -8,7 +8,7 @@ pipeline{
         }
         stage("Test"){
             steps{
-                sh 'mvn test'
+                sh 'cd java-web-project && mvn test'
             }
         }
     }
